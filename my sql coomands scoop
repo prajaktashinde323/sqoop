@@ -1,0 +1,11 @@
+LIST DATABASES
+-------------
+[hduser@ubuntu ~]$ sqoop list-databases --connect jdbc:mysql://localhost --username root --password '1234'
+
+LIST TABLES in a database
+--------------------------
+[hduser@ubuntu ~]$ sqoop list-tables --connect jdbc:mysql://localhost/college --username root --password '1234'
+
+
+sqoop import --connect jdbc:mysql://localhost/college --username root --password '1234' --table student_master --target-dir /NYSE/student_master
+
